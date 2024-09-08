@@ -1,0 +1,732 @@
+[
+    {
+        "question": "Who was the first king of unified Nepal?",
+        "options": [
+            "Prithvi Narayan Shah",
+            "Tribhuwan Shah",
+            "Mahendra Shah",
+            "Rana Bahadur Shah"
+        ],
+        "answer": "Prithvi Narayan Shah"
+    },
+    {
+        "question": "Which year did Nepal become a federal democratic republic?",
+        "options": [
+            "2008",
+            "2015",
+            "1990",
+            "2001"
+        ],
+        "answer": "2008"
+    },
+    {
+        "question": "Which dynasty ruled Nepal before the Shah dynasty?",
+        "options": [
+            "Malla Dynasty",
+            "Rana Dynasty",
+            "Thapa Dynasty",
+            "Khas Dynasty"
+        ],
+        "answer": "Malla Dynasty"
+    },
+    {
+        "question": "What is the national flower of Nepal?",
+        "options": [
+            "Lotus",
+            "Sunflower",
+            "Rhododendron",
+            "Rose"
+        ],
+        "answer": "Rhododendron"
+    },
+    {
+        "question": "What is the currency of Nepal?",
+        "options": [
+            "Nepalese Dollar",
+            "Nepalese Rupee",
+            "Nepalese Pound",
+            "Nepalese Taka"
+        ],
+        "answer": "Nepalese Rupee"
+    },
+    {
+        "question": "Which of the following rivers is the longest in Nepal?",
+        "options": [
+            "Koshi",
+            "Karnali",
+            "Gandaki",
+            "Bagmati"
+        ],
+        "answer": "Karnali"
+    },
+    {
+        "question": "In which year was Nepal admitted to the United Nations?",
+        "options": [
+            "1955",
+            "1960",
+            "1947",
+            "1975"
+        ],
+        "answer": "1955"
+    },
+    {
+        "question": "Which Nepalese city is known as the 'City of Temples'?",
+        "options": [
+            "Pokhara",
+            "Lalitpur",
+            "Kathmandu",
+            "Bhaktapur"
+        ],
+        "answer": "Kathmandu"
+    },
+    {
+        "question": "What is the approximate population of Nepal according to the 2021 census?",
+        "options": [
+            "29 million",
+            "25 million",
+            "32 million",
+            "27 million"
+        ],
+        "answer": "29 million"
+    },
+    {
+        "question": "Who was the last king of Nepal before the monarchy was abolished?",
+        "options": [
+            "King Mahendra",
+            "King Birendra",
+            "King Gyanendra",
+            "King Tribhuwan"
+        ],
+        "answer": "King Gyanendra"
+    },
+    {
+        "question": "What is the only international airport in Nepal as of 2023?",
+        "options": [
+            "Pokhara International Airport",
+            "Lukla Airport",
+            "Gautam Buddha International Airport",
+            "Tribhuvan International Airport"
+        ],
+        "answer": "Tribhuvan International Airport"
+    },
+    {
+        "question": "Who is regarded as the 'Living Goddess' in Nepalese culture?",
+        "options": [
+            "Devi",
+            "Saraswati",
+            "Kumari",
+            "Parvati"
+        ],
+        "answer": "Kumari"
+    },
+    {
+        "question": "What is the traditional staple food of Nepal?",
+        "options": [
+            "Dal Bhat",
+            "Momos",
+            "Chowmein",
+            "Sel Roti"
+        ],
+        "answer": "Dal Bhat"
+    },
+    {
+        "question": "Which river in Nepal is considered the holiest?",
+        "options": [
+            "Karnali",
+            "Bagmati",
+            "Gandaki",
+            "Koshi"
+        ],
+        "answer": "Bagmati"
+    },
+    {
+        "question": "Which is the largest lake in Nepal?",
+        "options": [
+            "Rara Lake",
+            "Phewa Lake",
+            "Begnas Lake",
+            "Tilicho Lake"
+        ],
+        "answer": "Rara Lake"
+    },
+    {
+        "question": "What is the name of Nepal’s highest national park?",
+        "options": [
+            "Langtang National Park",
+            "Sagarmatha National Park",
+            "Rara National Park",
+            "Chitwan National Park"
+        ],
+        "answer": "Sagarmatha National Park"
+    },
+    {
+        "question": "When did Nepal officially adopt its new constitution?",
+        "options": [
+            "2015",
+            "2007",
+            "1990",
+            "2001"
+        ],
+        "answer": "2015"
+    },
+    {
+        "question": "Who is the first female President of Nepal?",
+        "options": [
+            "Sushila Karki",
+            "Onsari Gharti",
+            "Bidya Devi Bhandari",
+            "Pratibha Patil"
+        ],
+        "answer": "Bidya Devi Bhandari"
+    },
+    {
+        "question": "What is the main religion practiced in Nepal?",
+        "options": [
+            "Buddhism",
+            "Hinduism",
+            "Islam",
+            "Christianity"
+        ],
+        "answer": "Hinduism"
+    },
+    {
+        "question": "Which mountain range is Nepal famous for?",
+        "options": [
+            "Rocky Mountains",
+            "Andes",
+            "Alps",
+            "Himalayas"
+        ],
+        "answer": "Himalayas"
+    },
+    {
+        "question": "Which treaty defined Nepal’s border with India?",
+        "options": [
+            "Sugauli Treaty",
+            "Treaty of Peace and Friendship",
+            "Panchsheel Agreement",
+            "Treaty of Versailles"
+        ],
+        "answer": "Sugauli Treaty"
+    },
+    {
+        "question": "Which festival is considered the most important in Nepal?",
+        "options": [
+            "Dashain",
+            "Holi",
+            "Maghe Sankranti",
+            "Tihar"
+        ],
+        "answer": "Dashain"
+    },
+    {
+        "question": "Which country shares the longest border with Nepal?",
+        "options": [
+            "China",
+            "Bhutan",
+            "India",
+            "Tibet"
+        ],
+        "answer": "India"
+    },
+    {
+        "question": "Which is the highest altitude lake in Nepal?",
+        "options": [
+            "Phewa Lake",
+            "Gosaikunda Lake",
+            "Rara Lake",
+            "Tilicho Lake"
+        ],
+        "answer": "Tilicho Lake"
+    },
+    {
+        "question": "Who is the author of 'Muna Madan', one of the most popular works of Nepali literature?",
+        "options": [
+            "Laxmi Prasad Devkota",
+            "Bhanubhakta Acharya",
+            "Madan Bhandari",
+            "Parijat"
+        ],
+        "answer": "Laxmi Prasad Devkota"
+    },
+    {
+        "question": "Which year did Nepal’s civil war officially end?",
+        "options": [
+            "2001",
+            "2005",
+            "2006",
+            "2008"
+        ],
+        "answer": "2006"
+    },
+    {
+        "question": "Which kingdom was annexed to form modern Nepal?",
+        "options": [
+            "Palpa",
+            "Sikkim",
+            "Kashmir",
+            "Gorkha"
+        ],
+        "answer": "Gorkha"
+    },
+    {
+        "question": "Which Nepalese site is a UNESCO World Heritage Site?",
+        "options": [
+            "Everest Base Camp",
+            "Rara Lake",
+            "Lumbini",
+            "Mount Manaslu"
+        ],
+        "answer": "Lumbini"
+    },
+    {
+        "question": "What is the main occupation of the majority of Nepalese people?",
+        "options": [
+            "Trade",
+            "Agriculture",
+            "Tourism",
+            "Manufacturing"
+        ],
+        "answer": "Agriculture"
+    },
+    {
+        "question": "What is the traditional dress of Nepal for men?",
+        "options": [
+            "Dhaka Topi",
+            "Sari",
+            "Lungi",
+            "Daura Suruwal"
+        ],
+        "answer": "Daura Suruwal"
+    },
+    {
+        "question": "Who was the first Prime Minister of Nepal after it became a republic?",
+        "options": [
+            "Baburam Bhattarai",
+            "Sher Bahadur Deuba",
+            "Pushpa Kamal Dahal",
+            "Madhav Kumar Nepal"
+        ],
+        "answer": "Pushpa Kamal Dahal"
+    },
+    {
+        "question": "In which year did Nepal join the South Asian Association for Regional Cooperation (SAARC)?",
+        "options": [
+            "1980",
+            "1985",
+            "1990",
+            "1995"
+        ],
+        "answer": "1985"
+    },
+    {
+        "question": "Which is the highest mountain located entirely within Nepal?",
+        "options": [
+            "Mount Everest",
+            "Makalu",
+            "Dhaulagiri",
+            "Annapurna"
+        ],
+        "answer": "Dhaulagiri"
+    },
+    {
+        "question": "Which Nepalese ethnic group is traditionally known for its mountaineering skills?",
+        "options": [
+            "Magar",
+            "Newar",
+            "Sherpa",
+            "Tamang"
+        ],
+        "answer": "Sherpa"
+    },
+    {
+        "question": "What was the Rana regime in Nepal known for?",
+        "options": [
+            "Modernization",
+            "Democratic Reforms",
+            "Authoritarianism",
+            "Colonization"
+        ],
+        "answer": "Authoritarianism"
+    },
+    {
+        "question": "Who is regarded as the first poet of Nepal?",
+        "options": [
+            "Laxmi Prasad Devkota",
+            "Bhanubhakta Acharya",
+            "Madan Bhandari",
+            "Parijat"
+        ],
+        "answer": "Bhanubhakta Acharya"
+    },
+    {
+        "question": "What was the original name of Kathmandu?",
+        "options": [
+            "Kantipur",
+            "Lalitpur",
+            "Yal",
+            "Malla"
+        ],
+        "answer": "Kantipur"
+    },
+    {
+        "question": "Which political event is celebrated on Jestha 15 in Nepal?",
+        "options": [
+            "Republic Day",
+            "Independence Day",
+            "Democracy Day",
+            "Constitution Day"
+        ],
+        "answer": "Republic Day"
+    },
+    {
+        "question": "What is the name of the Nepalese national anthem?",
+        "options": [
+            "Rato Ra Chandra Surya",
+            "Jana Gana Mana",
+            "Sayaun Thunga Phulka",
+            "God Save the King"
+        ],
+        "answer": "Sayaun Thunga Phulka"
+    },
+    {
+        "question": "Who is known as the 'Iron Man' of Nepal?",
+        "options": [
+            "B.P. Koirala",
+            "Ganesh Man Singh",
+            "K.P. Sharma Oli",
+            "Bhimsen Thapa"
+        ],
+        "answer": "Bhimsen Thapa"
+    },
+    {
+        "question": "What is the height of Mount Everest in meters?",
+        "options": [
+            "8848",
+            "8850",
+            "8820",
+            "8860"
+        ],
+        "answer": "8848"
+    },
+    {
+        "question": "Which province is Lumbini, the birthplace of Lord Buddha, located in?",
+        "options": [
+            "Province 1",
+            "Province 2",
+            "Province 5",
+            "Gandaki Province"
+        ],
+        "answer": "Province 5"
+    },
+    {
+        "question": "Which of these Nepalese cities is known as the 'Gateway to Mount Everest'?",
+        "options": [
+            "Pokhara",
+            "Lukla",
+            "Biratnagar",
+            "Dharan"
+        ],
+        "answer": "Lukla"
+    },
+    {
+        "question": "Who was the first woman to climb Mount Everest?",
+        "options": [
+            "Pasang Lhamu Sherpa",
+            "Junko Tabei",
+            "Edurne Pasaban",
+            "Gertrude Bell"
+        ],
+        "answer": "Junko Tabei"
+    },
+    {
+        "question": "Which political party led the People's War in Nepal?",
+        "options": [
+            "Nepali Congress",
+            "Rastriya Prajatantra Party",
+            "Communist Party of Nepal (Maoist)",
+            "United Marxist-Leninist"
+        ],
+        "answer": "Communist Party of Nepal (Maoist)"
+    },
+    {
+        "question": "Who was the first martyr of Nepal?",
+        "options": [
+            "Lakhan Thapa",
+            "Dashrath Chand",
+            "Bhakti Thapa",
+            "Gangalal Shrestha"
+        ],
+        "answer": "Lakhan Thapa"
+    },
+    {
+        "question": "What is the population density of Nepal as per the 2021 census?",
+        "options": [
+            "180 people per sq km",
+            "200 people per sq km",
+            "240 people per sq km",
+            "300 people per sq km"
+        ],
+        "answer": "200 people per sq km"
+    },
+    {
+        "question": "Which of the following Nepalese festivals is dedicated to brothers and sisters?",
+        "options": [
+            "Dashain",
+            "Tihar",
+            "Maghe Sankranti",
+            "Chhath"
+        ],
+        "answer": "Tihar"
+    },
+    {
+        "question": "What is the highest court of Nepal?",
+        "options": [
+            "High Court",
+            "District Court",
+            "Supreme Court",
+            "Appellate Court"
+        ],
+        "answer": "Supreme Court"
+    },
+    {
+        "question": "Which Nepalese river is known for white-water rafting?",
+        "options": [
+            "Bagmati",
+            "Karnali",
+            "Trishuli",
+            "Rapti"
+        ],
+        "answer": "Trishuli"
+    },
+    {
+        "question": "What is the dominant architectural style of temples in Kathmandu?",
+        "options": [
+            "Dravidian",
+            "Pagoda",
+            "Nagara",
+            "Indo-Saracenic"
+        ],
+        "answer": "Pagoda"
+    },
+    {
+        "question": "What was the capital of Nepal before Kathmandu?",
+        "options": [
+            "Gorkha",
+            "Bhaktapur",
+            "Lalitpur",
+            "Dharan"
+        ],
+        "answer": "Bhaktapur"
+    },
+    {
+        "question": "Which ethnic group is known for their bravery and has served in the British and Indian armies?",
+        "options": [
+            "Magar",
+            "Rai",
+            "Newar",
+            "Gurkha"
+        ],
+        "answer": "Gurkha"
+    },
+    {
+        "question": "When did the Sugauli Treaty between Nepal and the British East India Company take place?",
+        "options": [
+            "1815",
+            "1816",
+            "1857",
+            "1865"
+        ],
+        "answer": "1816"
+    },
+    {
+        "question": "What is the name of the popular trekking route in Nepal that circles the Annapurna range?",
+        "options": [
+            "Everest Base Camp Trek",
+            "Langtang Trek",
+            "Annapurna Circuit",
+            "Manaslu Circuit"
+        ],
+        "answer": "Annapurna Circuit"
+    },
+    {
+        "question": "Which country does Nepal share its northern border with?",
+        "options": [
+            "China",
+            "India",
+            "Bhutan",
+            "Tibet"
+        ],
+        "answer": "China"
+    },
+    {
+        "question": "Which Nepalese festival is also known as the 'festival of lights'?",
+        "options": [
+            "Dashain",
+            "Tihar",
+            "Chhath",
+            "Maghe Sankranti"
+        ],
+        "answer": "Tihar"
+    },
+    {
+        "question": "Which political leader led the Nepalese unification campaign?",
+        "options": [
+            "Tribhuvan Shah",
+            "Prithvi Narayan Shah",
+            "Birendra Shah",
+            "Gyanendra Shah"
+        ],
+        "answer": "Prithvi Narayan Shah"
+    },
+    {
+        "question": "In Nepal, what is 'Bisket Jatra' celebrated for?",
+        "options": [
+            "Harvest",
+            "New Year",
+            "Victory over demons",
+            "Buddha’s birth"
+        ],
+        "answer": "New Year"
+    },
+    {
+        "question": "Which province is Mount Everest located in?",
+        "options": [
+            "Province 1",
+            "Province 3",
+            "Gandaki Province",
+            "Sudurpashchim Province"
+        ],
+        "answer": "Province 1"
+    },
+    {
+        "question": "Which Nepalese festival celebrates the bond between sisters and brothers?",
+        "options": [
+            "Dashain",
+            "Tihar",
+            "Maghe Sankranti",
+            "Chhath"
+        ],
+        "answer": "Tihar"
+    },
+    {
+        "question": "Which Nepalese Prime Minister was assassinated during the Kot Massacre in 1846?",
+        "options": [
+            "Rana Bahadur Shah",
+            "Jung Bahadur Rana",
+            "Mathabar Singh Thapa",
+            "Bir Shumsher"
+        ],
+        "answer": "Mathabar Singh Thapa"
+    },
+    {
+        "question": "Which Nepalese city is often called the 'Gateway to the Himalayas'?",
+        "options": [
+            "Pokhara",
+            "Dharan",
+            "Biratnagar",
+            "Nepalgunj"
+        ],
+        "answer": "Pokhara"
+    },
+    {
+        "question": "Which Nepalese leader led the campaign to end the Rana autocracy?",
+        "options": [
+            "B.P. Koirala",
+            "Ganesh Man Singh",
+            "King Tribhuvan",
+            "Manmohan Adhikari"
+        ],
+        "answer": "King Tribhuvan"
+    },
+    {
+        "question": "Which sector contributes the most to Nepal's GDP?",
+        "options": [
+            "Tourism",
+            "Agriculture",
+            "Manufacturing",
+            "Mining"
+        ],
+        "answer": "Agriculture"
+    },
+    {
+        "question": "What is the name of Nepal’s oldest university?",
+        "options": [
+            "Pokhara University",
+            "Tribhuvan University",
+            "Kathmandu University",
+            "Purbanchal University"
+        ],
+        "answer": "Tribhuvan University"
+    },
+    {
+        "question": "Which Nepalese ethnic group is known for their metalworking skills?",
+        "options": [
+            "Magar",
+            "Newar",
+            "Sherpa",
+            "Tharu"
+        ],
+        "answer": "Newar"
+    },
+    {
+        "question": "Which kingdom did King Prithvi Narayan Shah belong to before the unification of Nepal?",
+        "options": [
+            "Kaski",
+            "Gorkha",
+            "Makwanpur",
+            "Bhaktapur"
+        ],
+        "answer": "Gorkha"
+    },
+    {
+        "question": "What does 'Dhulikhel' literally mean?",
+        "options": [
+            "Place of Dust",
+            "Place of Gods",
+            "Mountain Valley",
+            "Hidden City"
+        ],
+        "answer": "Place of Dust"
+    },
+    {
+        "question": "Which Nepalese leader played a crucial role in drafting the 1990 constitution?",
+        "options": [
+            "Ganesh Man Singh",
+            "B.P. Koirala",
+            "Manmohan Adhikari",
+            "Krishna Prasad Bhattarai"
+        ],
+        "answer": "Krishna Prasad Bhattarai"
+    },
+    {
+        "question": "Who was the first Chief Justice of Nepal?",
+        "options": [
+            "Hari Prasad Pradhan",
+            "Surendra Prasad Singh",
+            "Bishwa Nath Upadhyaya",
+            "Ratna Bahadur Bista"
+        ],
+        "answer": "Hari Prasad Pradhan"
+    },
+    {
+        "question": "What is the length of Nepal’s longest highway, the Mahendra Highway?",
+        "options": [
+            "1000 km",
+            "1300 km",
+            "1600 km",
+            "1800 km"
+        ],
+        "answer": "1600 km"
+    },
+    {
+        "question": "Which Nepalese festival marks the end of the rice planting season?",
+        "options": [
+            "Ropain",
+            "Tihar",
+            "Chhath",
+            "Dashain"
+        ],
+        "answer": "Ropain"
+    }
+]

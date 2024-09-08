@@ -1,0 +1,93 @@
+.wrapper {
+    background-image: url("./assets/millionaire-bg-big.webp");
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.custom-block {
+    background-color: red;
+}
+
+.q-block {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.q-container {
+    /* background-image: url("./assets/millionaire-bg-big.webp");
+    background-repeat: no-repeat;
+    background-size: cover; */
+
+    background-color: rgba(255, 255, 255, 0.226);
+    backdrop-filter: blur(10px);
+}
+
+section.hidden {
+    display: none;
+}
+
+.vh-80 {
+    height: 80vh;
+}
+
+.row-60 {
+    height: 60%;
+}
+.row-40 {
+    height: 40%;
+}
+
+.row-20 {
+    height: 20%;
+}
+.row-80 {
+    height: 80%;
+}
+
+.image-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.image-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.q-question > div {
+    height: 100px;
+}
+
+.q-answer > div {
+    height: 60px;
+}
+
+.q-question > div,
+.q-answer > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-notched {
+    overflow: hidden;
+    /* background-color: #522d5b; */
+    clip-path: polygon(
+        0 45%,
+        8% 0,
+        92% 0,
+        100% 45%,
+        100% 55%,
+        92% 100%,
+        8% 100%,
+        0% 55%
+    );
+
+    padding: 10px;
+}
