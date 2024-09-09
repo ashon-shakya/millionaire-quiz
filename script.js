@@ -4,20 +4,18 @@
 
 const QUESTION_TIMER = 30;
 const ANSWER_NO = 4;
-const OPTION_SELECT_TIME = 1000;
-const OPTION_REVEAL_TIME = 2000;
-
-const FINAL_REVEAL_TIME = 4000;
-
-const QUESTIONS_REQUIRED = 10;
+const OPTION_SELECT_TIME = 3000;
+const OPTION_REVEAL_TIME = 6000;
+const FINAL_REVEAL_TIME = 5000;
+const QUIZ_START_TIME = 4000;
+const QUESTIONS_REQUIRED = 13;
 
 let questionList = [];
-
 let currQuestion = 0;
 
 let helpline = [
     {
-        name: "5050",
+        name: "fifty",
         label: "50 - 50",
         isUsed: false,
     },
@@ -41,12 +39,12 @@ let prizeTable = [
     },
     {
         value: 2000,
-        isGuarantee: true,
+        isGuarantee: false,
         hasWon: false,
     },
     {
         value: 3000,
-        isGuarantee: true,
+        isGuarantee: false,
         hasWon: false,
     },
     {
@@ -56,12 +54,12 @@ let prizeTable = [
     },
     {
         value: 5000,
-        isGuarantee: true,
+        isGuarantee: false,
         hasWon: false,
     },
     {
         value: 6000,
-        isGuarantee: true,
+        isGuarantee: false,
         hasWon: false,
     },
     {
@@ -71,16 +69,31 @@ let prizeTable = [
     },
     {
         value: 8000,
-        isGuarantee: true,
+        isGuarantee: false,
         hasWon: false,
     },
     {
         value: 9000,
-        isGuarantee: true,
+        isGuarantee: false,
         hasWon: false,
     },
     {
         value: 10000,
+        isGuarantee: true,
+        hasWon: false,
+    },
+    {
+        value: 20000,
+        isGuarantee: false,
+        hasWon: false,
+    },
+    {
+        value: 30000,
+        isGuarantee: false,
+        hasWon: false,
+    },
+    {
+        value: 40000,
         isGuarantee: true,
         hasWon: false,
     },
@@ -115,15 +128,25 @@ const displayPrizeTable = () => {
 
     for (i = questionLength - 1; i >= 0; i--) {
         prizeTableContent += `
-        <tr>
+        <tr class = '${
+            i == currQuestion - 1
+                ? "currentWin"
+                : prizeTable[i].isGuarantee
+                ? "guaranteed"
+                : ""
+        } ' >
             <td>
                 ${i + 1}
             </td>
-            <td>
-                ${prizeTable[i].hasWon ? "*" : "-"}
+            <td ${prizeTable[i].hasWon ? 'class="guaranteed"' : ""} >
+                ${
+                    prizeTable[i].hasWon
+                        ? '<i class="fa-solid fa-gem"></i>'
+                        : '<i class="fa-regular fa-circle"></i>'
+                }
             </td>
             <td>
-                ${prizeTable[i].value}
+               $ ${prizeTable[i].value}
             </td>
         </tr>
     `;
@@ -133,6 +156,8 @@ const displayPrizeTable = () => {
 };
 
 const displayQuestion = (questionIndex) => {
+    playAudio("early");
+
     currQuestion = questionIndex;
     const questionSpan = document.getElementById("question-span");
     const answerSpan = document.getElementById("answer-span");
@@ -141,7 +166,7 @@ const displayQuestion = (questionIndex) => {
 
     for (i = 0; i < ANSWER_NO; i++) {
         optionsContent += `
-            <div class="col-6 btn btn-primary btn-notched" onclick="submitAnswer(${i})" id="answer-${i}">
+            <div class="col-6 btn btn-primary bg-notched bg-question" onclick="submitAnswer(${i})" id="answer-${i}">
                 ${questionList[currQuestion].options[i]}
             </div> 
         
@@ -162,11 +187,13 @@ const displayAnswer = (ck) => {
     const correctAnswerElement = document.getElementById("answer-" + ck);
     correctAnswerElement.classList.remove("btn-warning");
     correctAnswerElement.classList.remove("btn-primary");
+    correctAnswerElement.classList.remove("bg-question");
     correctAnswerElement.classList.add("btn-success");
 };
 
 const submitAnswer = (selectedAnswerKey) => {
     if (!isLoading) {
+        playAudio("lock");
         isLoading = true;
 
         let currQuestObj = questionList[currQuestion];
@@ -174,6 +201,7 @@ const submitAnswer = (selectedAnswerKey) => {
         const selectedAnswerElement = document.getElementById(
             "answer-" + selectedAnswerKey
         );
+        selectedAnswerElement.classList.remove("bg-question");
         selectedAnswerElement.classList.add("btn-warning");
 
         const selectedOptionAnswer = document.getElementById(
@@ -184,6 +212,12 @@ const submitAnswer = (selectedAnswerKey) => {
             currQuestObj.answer
         );
         setTimeout(() => {
+            if (currQuestObj.answer === selectedOptionAnswer) {
+                playAudio("correct");
+            } else {
+                playAudio("wrong");
+            }
+
             displayAnswer(correctAnswerKey);
         }, OPTION_SELECT_TIME);
 
@@ -236,8 +270,13 @@ const clearPrize = () => {
 const startQuestion = async () => {
     await fetchQuestion();
     clearPrize();
-    displayModule("quiz-module");
-    displayQuestion(0);
+
+    playAudio("start");
+
+    setTimeout(() => {
+        displayModule("quiz-module");
+        displayQuestion(0);
+    }, QUIZ_START_TIME);
 };
 
 const displayScore = () => {
@@ -255,4 +294,103 @@ const displayScore = () => {
     displayModule("score-module");
 };
 
-displayModule("intro-module");
+const playAudio = (audioType) => {
+    let audioSourceList = [
+        {
+            name: "intro",
+            source: "./assets/sound/intro.mp3",
+        },
+        {
+            name: "start",
+            source: "./assets/sound/lets-play.mp3",
+        },
+        {
+            name: "early",
+            source: "./assets/sound/early-music.mp3",
+        },
+        {
+            name: "correct",
+            source: "./assets/sound/correct-music.mp3",
+        },
+        {
+            name: "wrong",
+            source: "./assets/sound/wrong-music.mp3",
+        },
+        {
+            name: "lock",
+            source: "./assets/sound/answer-lock.mp3",
+        },
+        {
+            name: "intense",
+            source: "./assets/sound/100000-music.mp3",
+        },
+    ];
+
+    var audio = document.getElementById("quizAudio");
+    audio.pause();
+
+    const audioSource = audioSourceList.find((item) => item.name == audioType);
+
+    if (audioSource) {
+        var source = document.getElementById("audioSource");
+
+        // Change the source file
+        source.src = audioSource.source;
+
+        // Load the new source
+        audio.load();
+        // Play the audio
+        audio.play();
+    }
+};
+
+const startQuiz = () => {
+    playAudio("intro");
+    displayModule("intro-module");
+};
+
+// startQuiz();
+
+const selectLifeLine = (lifeLine) => {
+    switch (lifeLine) {
+        case "fifty":
+            var audio = document.getElementById("lifeLineAudio");
+            audio.play();
+
+            const currentQuestionObj = questionList[currQuestion];
+
+            let optionsIndexList = [0, 1, 2, 3];
+
+            let answerIndex = currentQuestionObj.options.indexOf(
+                currentQuestionObj.answer
+            );
+
+            console.log(1, answerIndex);
+
+            optionsIndexList = optionsIndexList.filter(
+                (item) => item != answerIndex
+            );
+
+            let arr = [1, 2, 4];
+
+            // Generate a random index between 0 and arr.length - 1
+            let randomIndex = Math.floor(
+                Math.random() * optionsIndexList.length
+            );
+
+            // Remove the element at the random index
+            optionsIndexList.splice(randomIndex, 1);
+
+            console.log(optionsIndexList);
+
+            optionsIndexList.forEach((index) => {
+                currentQuestionObj.options[index] = "";
+            });
+
+            displayQuestion(currQuestion);
+
+            break;
+    }
+};
+
+startQuiz();
