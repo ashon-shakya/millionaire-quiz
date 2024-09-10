@@ -466,6 +466,8 @@ const openGoogleSearch = (query) => {
     window.open(searchUrl, "_blank");
 };
 
-window.addEventListener("load", (event) => {
+const enterGame = () => {
     startQuiz();
-});
+};
+
+displayModule("enter-module");
