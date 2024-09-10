@@ -1,3 +1,9 @@
+* {
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
 .wrapper {
     background-image: url("./assets/millionaire-bg-big.webp");
     height: 100vh;
@@ -39,6 +45,13 @@ section.hidden {
     height: 40%;
 }
 
+.row-70 {
+    height: 70%;
+}
+.row-30 {
+    height: 30%;
+}
+
 .row-20 {
     height: 20%;
 }
@@ -53,11 +66,23 @@ section.hidden {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    flex-direction: column;
+    gap: 30px;
 }
 .image-container img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+    height: 300px;
+    width: auto;
+    /* object-fit: cover; */
+}
+.image-container h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fdc660;
+}
+
+.startBtn {
+    font-size: 40px;
+    font-weight: bold;
 }
 
 .q-question > div {
@@ -95,13 +120,16 @@ section.hidden {
 .bg-question {
     background: linear-gradient(180deg, #021880, #1b5cd8, #021880);
     color: white;
-    font-weight: lighter;
+    font-weight: bolder;
 }
 
 .prizeTable {
-    font-family: revert;
-    font-size: 18px;
-    font-weight: lighter;
+    font-size: 20px;
+    font-weight: bolder;
+    --bs-table-bg: #ffffff00;
+    --bs-table-border-color: #7c7c7c00;
+    --bs-table-color: white;
+    line-height: 20px;
 
     --bs-table-bg: #ffffff00;
     --bs-table-border-color: #7c7c7c00;
@@ -125,4 +153,14 @@ section.hidden {
         8% 100%,
         0% 55%
     );
+}
+
+.lifeLine {
+    transform: scaleY(0.85);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.usedLifeLine {
+    background: orange;
 }

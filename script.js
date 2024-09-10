@@ -8,30 +8,53 @@ const OPTION_SELECT_TIME = 3000;
 const OPTION_REVEAL_TIME = 6000;
 const FINAL_REVEAL_TIME = 5000;
 const QUIZ_START_TIME = 4000;
-const QUESTIONS_REQUIRED = 13;
+const QUESTIONS_REQUIRED = 15;
 
 let questionList = [];
 let currQuestion = 0;
 
-let helpline = [
+let lifeLineList = [
     {
         name: "fifty",
         label: "50 - 50",
         isUsed: false,
+        img: "./assets/fifty.png",
     },
     {
         name: "poll",
         label: "Audience Poll",
         isUsed: false,
+        img: "./assets/poll.png",
     },
     {
         name: "web",
         label: "Web Search",
         isUsed: false,
+        img: "./assets/web.png",
     },
 ];
 
 let prizeTable = [
+    {
+        value: 100,
+        isGuarantee: true,
+        hasWon: false,
+    },
+    {
+        value: 200,
+        isGuarantee: false,
+        hasWon: false,
+    },
+    {
+        value: 300,
+        isGuarantee: false,
+        hasWon: false,
+    },
+    {
+        value: 500,
+        isGuarantee: false,
+        hasWon: false,
+    },
     {
         value: 1000,
         isGuarantee: true,
@@ -43,28 +66,8 @@ let prizeTable = [
         hasWon: false,
     },
     {
-        value: 3000,
-        isGuarantee: false,
-        hasWon: false,
-    },
-    {
         value: 4000,
-        isGuarantee: true,
-        hasWon: false,
-    },
-    {
-        value: 5000,
         isGuarantee: false,
-        hasWon: false,
-    },
-    {
-        value: 6000,
-        isGuarantee: false,
-        hasWon: false,
-    },
-    {
-        value: 7000,
-        isGuarantee: true,
         hasWon: false,
     },
     {
@@ -73,27 +76,37 @@ let prizeTable = [
         hasWon: false,
     },
     {
-        value: 9000,
+        value: 16000,
         isGuarantee: false,
         hasWon: false,
     },
     {
-        value: 10000,
+        value: 32000,
         isGuarantee: true,
         hasWon: false,
     },
     {
-        value: 20000,
+        value: 64000,
         isGuarantee: false,
         hasWon: false,
     },
     {
-        value: 30000,
+        value: 125000,
         isGuarantee: false,
         hasWon: false,
     },
     {
-        value: 40000,
+        value: 250000,
+        isGuarantee: false,
+        hasWon: false,
+    },
+    {
+        value: 500000,
+        isGuarantee: false,
+        hasWon: false,
+    },
+    {
+        value: 1000000,
         isGuarantee: true,
         hasWon: false,
     },
@@ -135,7 +148,7 @@ const displayPrizeTable = () => {
                 ? "guaranteed"
                 : ""
         } ' >
-            <td>
+            <td style="    text-align: right !important;">
                 ${i + 1}
             </td>
             <td ${prizeTable[i].hasWon ? 'class="guaranteed"' : ""} >
@@ -153,6 +166,29 @@ const displayPrizeTable = () => {
     }
 
     prizeTableElement.innerHTML = prizeTableContent;
+
+    displayLifeLine();
+};
+
+const displayLifeLine = () => {
+    const lifeLineElement = document.getElementById("lifeLine");
+
+    let lifeLineContent = "";
+
+    lifeLineList.forEach((item) => {
+        lifeLineContent += `
+            <div class="col-4 btn">
+                    <img class="img-fluid p-10 lifeLine ${
+                        item.isUsed ? "usedLifeLine" : ""
+                    } " src="${
+            item.img
+        }" alt="" srcset="" onclick="selectLifeLine('${
+            item.isUsed ? "" : item.name
+        }')">
+            </div>`;
+    });
+
+    lifeLineElement.innerHTML = lifeLineContent;
 };
 
 const displayQuestion = (questionIndex) => {
@@ -265,6 +301,10 @@ const clearPrize = () => {
     prizeTable.forEach((item) => {
         item.hasWon = false;
     });
+
+    lifeLineList.forEach((item) => {
+        item.isUsed = false;
+    });
 };
 
 const startQuestion = async () => {
@@ -281,10 +321,15 @@ const startQuestion = async () => {
 
 const displayScore = () => {
     const scoreElement = document.getElementById("score");
+    const winTextElement = document.getElementById("winText");
 
     if (prizeTable[currQuestion].hasWon) {
         scoreElement.innerText = prizeTable[currQuestion].value;
+        winTextElement.innerText =
+            "Congratulations!! You have become a Millionaire !!!";
+        playAudio("million");
     } else {
+        winTextElement.innerText = "Better luck next time!";
         if (prizeTable[currQuestion - 1]) {
             scoreElement.innerText = prizeTable[currQuestion - 1].value;
         } else {
@@ -324,6 +369,11 @@ const playAudio = (audioType) => {
             name: "intense",
             source: "./assets/sound/100000-music.mp3",
         },
+
+        {
+            name: "million",
+            source: "./assets/sound/million-win.mp3",
+        },
     ];
 
     var audio = document.getElementById("quizAudio");
@@ -348,8 +398,6 @@ const startQuiz = () => {
     playAudio("intro");
     displayModule("intro-module");
 };
-
-// startQuiz();
 
 const selectLifeLine = (lifeLine) => {
     switch (lifeLine) {
@@ -387,10 +435,37 @@ const selectLifeLine = (lifeLine) => {
                 currentQuestionObj.options[index] = "";
             });
 
+            lifeLineList.forEach((item) => {
+                if (item.name == lifeLine) {
+                    item.isUsed = true;
+                }
+            });
+
+            displayQuestion(currQuestion);
+
+            break;
+        case "web":
+            var audio = document.getElementById("lifeLineAudio");
+            audio.play();
+            openGoogleSearch(questionList[currQuestion].question);
+            lifeLineList.forEach((item) => {
+                if (item.name == lifeLine) {
+                    item.isUsed = true;
+                }
+            });
             displayQuestion(currQuestion);
 
             break;
     }
 };
 
-startQuiz();
+const openGoogleSearch = (query) => {
+    const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(
+        query
+    )}`;
+    window.open(searchUrl, "_blank");
+};
+
+window.addEventListener("load", (event) => {
+    startQuiz();
+});
